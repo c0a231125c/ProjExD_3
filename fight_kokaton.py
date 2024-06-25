@@ -154,7 +154,7 @@ class Score:
         self.rct.centerx = 100
         
 
-    def update(self, screen):
+    def update(self, screen: pg.Surface):
         self.img = self.fonto.render(f"スコア：{self.score}", 0, (0, 0, 255))
         screen.blit(self.img, self.rct)
 
